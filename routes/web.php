@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// middleware
+/*Route::get('/', function () {
+    //
+})->middleware('request.filter');*/
+
 // basic route,treate with a Closure
 Route::get('simple',function(){
     return 'Helllo World';
